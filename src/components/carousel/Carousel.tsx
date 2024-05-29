@@ -6,10 +6,8 @@ import CarouselItem from "./CarouselItem";
 import { CarouselWrapper } from "../layout/Containers";
 import Error from "./Error";
 import NoPrograms from "./NoPrograms";
+import { CarouselProps } from "../../types/types";
 
-interface CarouselProps {
-  filter: (program: any) => boolean;
-}
 
 const Carousel: React.FC<CarouselProps> = ({ filter }) => {
   const { programs, loading, error } = useData();

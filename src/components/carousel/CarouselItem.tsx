@@ -1,17 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import styled, { keyframes, css } from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 import { updateImageUrl } from '../../utils/imageUtils';
+import { CarouselItemProps } from '../../types/types';
 
-interface CarouselItemProps {
-  program: {
-    id: number;
-    title: string;
-    image: string;
-  };
-  isActive: boolean;
-  onMouseEnter: () => void;
-}
 
 const CarouselItem: React.FC<CarouselItemProps> = ({ program, isActive, onMouseEnter }) => {
   const width = window.innerWidth >= 1920 ? 1080 : 720;

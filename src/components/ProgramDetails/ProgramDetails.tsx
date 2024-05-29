@@ -12,10 +12,7 @@ import {
   ProgramInfo,
 } from "../layout/Program";
 import ProgramSkeleton from "./Skeleton";
-
-interface ProgramDetailsProps {
-  programId: string;
-}
+import { ProgramDetailsProps } from "../../types/types";
 
 const ProgramDetails: React.FC<ProgramDetailsProps> = ({ programId }) => {
   const { programs, loading, error } = useData();

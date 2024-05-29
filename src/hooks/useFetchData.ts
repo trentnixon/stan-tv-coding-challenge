@@ -1,11 +1,6 @@
 import { useState, useEffect } from 'react';
-import { Program } from '../types';
+import { Program, UseFetchDataReturn } from '../types/types';
 
-interface UseFetchDataReturn {
-  data: Program[] | null;
-  loading: boolean;
-  error: string | null;
-}
 
 const useFetchData = (url: string): UseFetchDataReturn => {
   const [data, setData] = useState<Program[] | null>(null);

@@ -1,11 +1,9 @@
 import React from "react";
 import styled from "styled-components";
 import { Link, useLocation } from "react-router-dom";
+import { NavItemProps } from "../../types/types";
 
-interface NavItemProps {
-  to: string;
-  label: string;
-}
+
 
 const NavItem: React.FC<NavItemProps> = ({ to, label }) => {
   const location = useLocation();
