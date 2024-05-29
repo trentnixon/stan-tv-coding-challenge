@@ -6,8 +6,6 @@ yarn-debug.log*
 yarn-error.log*
 firebase-debug.log*
 
-# Firebase cache
-.firebase/
 
 # Firebase config
 
@@ -48,9 +46,6 @@ node_modules/
 out
 build
 
-# Optional npm cache directory
-.npm
-.next
 
 # Optional eslint cache
 .eslintcache
@@ -60,9 +55,6 @@ build
 
 # Output of 'npm pack'
 *.tgz
-
-# Yarn Integrity file
-.yarn-integrity
 
 # dotenv environment variables file
 .env
